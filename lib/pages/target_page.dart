@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class TargetPage extends StatelessWidget {
+  const TargetPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Projects'),
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.arrow_back),
+        ),
+        title: const Text('My Target'),
+        centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {},

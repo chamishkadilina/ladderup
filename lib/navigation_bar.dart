@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ladderup/screens/home_screen.dart';
-import 'package:ladderup/screens/schedule_screen.dart';
-import 'package:ladderup/screens/settings_screen.dart';
-import 'package:ladderup/screens/target_screen.dart';
+import 'package:ladderup/pages/home_page.dart';
+import 'package:ladderup/pages/schedule_page.dart';
+import 'package:ladderup/pages/settings_page.dart';
+import 'package:ladderup/pages/target_page.dart';
 
 class MyNavigationBar extends StatefulWidget {
   const MyNavigationBar({super.key});
@@ -69,10 +69,10 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
         ],
       ),
       body: [
-        const HomeScreen(),
-        const ScheduleScreen(),
-        const TargetScreen(),
-        const SettingsScreen(),
+        const HomePage(),
+        const SchedulePage(),
+        const TargetPage(),
+        const SettingsPage(),
       ][currentPageIndex],
     );
   }
